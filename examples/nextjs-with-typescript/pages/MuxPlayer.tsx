@@ -82,7 +82,7 @@ const toPlayerPropsFromJSON = (
 
 const DEFAULT_INITIAL_STATE: Partial<MuxPlayerProps> = Object.freeze({
   preferCmcd: undefined,
-  preferPlayback: undefined,
+  preferPlayback: "mse",
   muted: undefined,
   debug: undefined,
   disableTracking: undefined,
@@ -121,7 +121,7 @@ const DEFAULT_INITIAL_STATE: Partial<MuxPlayerProps> = Object.freeze({
   customDomain: undefined,
   tokens: undefined,
   playbackId: undefined,
-  streamType: undefined,
+  streamType: "on-demand",
   storyboardSrc: undefined,
   theme: undefined,
   fullscreenElement: undefined,
